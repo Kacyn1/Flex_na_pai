@@ -1,12 +1,14 @@
 body {
     margin: 0;
 }
+
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 .row {
     display: flex;
     border: 1px solid #000;
@@ -15,62 +17,110 @@ body {
     flex: 3;
     padding: 5px;
 }
+
 .flex-6 {
     border: 1px solid #000;
     flex: 2;
     background: #F5A9F2;
 }
+
 .flex-6:first-child {
     margin-right: 5px;
 }
+
 .flex-12 {
     border: 1px solid #000;
     display: flex;
     flex: 0 0 100%;
     background: #CECEF6;
 }
+
+label {
+    margin: 0 0 20px 20px;
+    font-size: 25px;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and(max-width:640px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
 .navigation-bar {
-	margin: auto;
-	width: 50%;
-	
-	
+    margin: auto;
+    width: 50%;
+    display: none;
 }
+
 .navigation-bar ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	display: flex;	
-	
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
 }
+
 li {
-	
-	width: 25%;
-	text-align: center;
-	font-size: 25px;
-	border: 1px solid black;
-	background-color: #819FF7;
+    width: 25%;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid black;
+    border-left: 0;
+    background-color: #819FF7;
 }
+
+li:first-child {
+    border-left: 1px solid black;
+}
+
+li:last-child {
+    border-right: 1px solid black;
+}
+
 .navigation-item {
-	padding: 10px;
+    padding: 10px;
 }
+
 li:hover {
-background-color:#8181F7;
-}	
+    background-color: #8181F7;
+}
+
 a {
-	text-decoration: none;
-	
+    text-decoration: none;
 }
+
 a:link {
-	color: black;
+    color: black;
 }
+
 a:visited {
-	color: black;
+    color: black;
 }
+
 a:hover {
-	color: black;
+    color: black;
 }
+
 a:active {
-	color: black;
+    color: black;
 }
-	
