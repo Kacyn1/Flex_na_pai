@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Flex</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="flex-12">
-				<div class="navigation-bar">
-					<ul>
-						<li>
-							<a href="#Home"><div class= "navigation-item">Home</div></a>
-						</li>
-						<li>
-							<a href="#About"><div class= "navigation-item">About</div></a>
-						</li>
-						<li>
-							<a href="#Blog"><div class= "navigation-item">Blog</div></a>
-						</li>
-						<li>
-							<a href="#Content"><div class= "navigation-item">Content</div></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-            <div class="flex-12">2.flex-12-1</div>
+                <div class="nav">
+                    <label for="toggle">&#9776</label>
+                    <input type="checkbox" id="toggle" />
+                </div>
+                <div class="navigation-bar">
+                    <ul>
+                        <li>
+                            <a href="#Home">
+                                <div class="navigation-item">Home</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#About">
+                                <div class="navigation-item">About</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Blog">
+                                <div class="navigation-item">Blog</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Content">
+                                <div class="navigation-item">Content</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-12"></div>
         </div>
         <div class="row">
             <div class="flex-6">3.flex-6</div>
@@ -38,4 +52,5 @@
         </div>
     </div>
 </body>
+
 </html>
