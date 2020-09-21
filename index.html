@@ -1,66 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    Witaj Świecie!
-    <!-- styl wewnętrzny - inner -->
-    <script type="text/javascript">
-        // komentarz jednowierszowy
-        /*
-        komentarz jednowierszowy
-        komentarz jednowierszowy
-        */
-        // wyświetla komunikat w konsoli
-        console.log('witaj świecie');
-        // wyświetla ostrzezenie w konsoli
-        console.warn('ostrzezenie');
-        // wyświetla błędu w konsoli
-        console.error('witaj świecie', "tekst", 10,
-            3.14159);
-
-        // wyświetlanie w dokumencie WWW
-        document.write('TEST');
-
-        // zmienne
-        // nazewnictwo - reguły
-        // moze zawierać litery a-z i A-Z
-        // moze zawierać liczby 0-9
-        // moze zawierać podkreślnik
-        // nie moze uzywać zarezerwowanego juz słowa, np var
-        // nie moze rozpoczynać się od liczby
-        var nazwa_zmiennej;
-        var x = 10;
-        console.log(nazwa_zmiennej);
-        nazwa_zmiennej = 10;
-        nazwa_zmiennej = 'tekst';
-        console.log(nazwa_zmiennej);
-
-        // operatory matematyczne:
-        // dodawanie +
-        // odejmowanie -
-        // mnozenie *
-        // dzielenie /
-        var suma = x + 15;
-        // modulo % - reszta z dzielenia 
-        // potęga, np 2**2 (2 do pot. 2)
-        // operator przypisania =
-
-        // konkatenacja - łączenie tekstów z tekstami lub wartościami
-        // + , np. 'Witaj ' + 'świecie!' => 'Witaj świecie'
-        document.write('<br>');
-        var imie = 'Jan';
-        var nazwisko = 'Kowalski';
-        document.write('Witaj ' + imie + ' ' + nazwisko + '!');
-    </script>
-    <!-- styl zewnętrzny - external -->
-    <script type="text/javascript" src="js/main.js">
-    </script>
+    <div class="container">
+        <div class="row">
+            <div class="flex-12">
+				<div class="navigation-bar">
+					<ul>
+						<li>
+							<a href="#Home"><div class= "navigation-item">Home</div></a>
+						</li>
+						<li>
+							<a href="#About"><div class= "navigation-item">About</div></a>
+						</li>
+						<li>
+							<a href="#Blog"><div class= "navigation-item">Blog</div></a>
+						</li>
+						<li>
+							<a href="#Content"><div class= "navigation-item">Content</div></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+            <div class="flex-12">2.flex-12-1</div>
+        </div>
+        <div class="row">
+            <div class="flex-6">3.flex-6</div>
+            <div class="flex-6">4.flex-6</div>
+        </div>
+        <div class="row">
+            <div class="flex-12">5.flex-12</div>
+        </div>
+    </div>
 </body>
-
 </html>
